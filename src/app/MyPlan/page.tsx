@@ -213,7 +213,7 @@ const MYPLAN = () => {
                         </button>
                       </Link>
 
-                      <button className="bg-[#CCFF00] flex gap-2 items-center justify-center text-black py-3 px-4 rounded-2xl whitespace-nowrap">
+                      <button onClick={()=>toast.success(`marks the workout done`)} className="bg-[#CCFF00] flex gap-2 items-center justify-center text-black py-3 px-4 rounded-2xl whitespace-nowrap">
                         <FaCheck />
                         Mark as Done
                       </button>
@@ -226,7 +226,7 @@ const MYPLAN = () => {
                             )
                           );
 
-                          toast.success(`${data.name} Removed`);
+                          toast.success(`removes the workout`);
                         }}
                         className="flex justify-center items-center"
                       >
@@ -337,7 +337,7 @@ const MYPLAN = () => {
                         </button>
                       </Link>
 
-                      <button className="bg-[#CCFF00] flex gap-2 items-center justify-center text-black py-3 px-4 rounded-2xl whitespace-nowrap">
+                      <button onClick={()=>toast.success(`marks the workout done`)} className="bg-[#CCFF00] flex gap-2 items-center justify-center text-black py-3 px-4 rounded-2xl whitespace-nowrap">
                         <FaCheck />
                         Mark as Done
                       </button>
@@ -350,7 +350,7 @@ const MYPLAN = () => {
                             )
                           );
 
-                          toast.success(`${data.name} Removed`);
+                          toast.success(` removes the workout`);
                         }}
                         className="flex justify-center items-center"
                       >
