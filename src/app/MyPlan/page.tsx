@@ -249,9 +249,11 @@ const MYPLAN = () => {
                     Browse the library and add a lift to get today moving.
                   </p>
 
+                 <Link href="/">
                   <button className="bg-[#C2F10D] py-3 px-4 rounded-2xl text-black mt-5">
                     Go to workouts
                   </button>
+                 </Link>
 
                 </div>
               )}
@@ -371,9 +373,11 @@ const MYPLAN = () => {
                     Browse the library and add a lift to get today moving.
                   </p>
 
+                <Link href="/">
                   <button className="bg-[#C2F10D] py-3 px-4 rounded-2xl text-black mt-5">
                     Go to workouts
                   </button>
+                </Link>
 
                 </div>
               )}

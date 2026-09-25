@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div className="container mx-auto px-4 sm:px-6  py-3">
         <div className="flex flex-wrap items-center justify-between gap-3">
 
           {/* Logo */}
