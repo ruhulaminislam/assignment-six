@@ -30,3 +30,4 @@ FitLog is a modern and responsive workout library that helps users explore exerc
 
 5. **Sorting & Responsive Design**
    Sort workouts by **Duration, Calories, or Rating**, with a responsive interface that works across mobile, tablet, and desktop devices.
+              ##  ##
