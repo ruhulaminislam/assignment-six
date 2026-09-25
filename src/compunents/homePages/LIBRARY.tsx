@@ -10,7 +10,7 @@ const LIBRARY = async () => {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-0 mt-10 sm:mt-14 lg:mt-[70px]">
 
-      <div>
+      <div id="library">
         <h1 className="text-[#FFFFFF] font-bold text-3xl sm:text-4xl">
           THE LIBRARY
         </h1>

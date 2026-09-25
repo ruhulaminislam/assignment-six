@@ -1,40 +1,86 @@
+import React from "react";
 
 const Loading = () => {
   return (
-    <div className="min-h-screen bg-[#0D0F12] flex items-center justify-center px-4">
-      <div className="flex flex-col items-center text-center">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-0">
 
-        {/* Animated Loader */}
-        <div className="relative flex items-center justify-center">
-          <div className="w-20 h-20 rounded-full border-4 border-[#25282F]"></div>
+      {/* Hero Skeleton */}
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-8 p-6 sm:p-8 lg:p-12 mt-10 sm:mt-14 lg:mt-[70px] bg-[#15171D] rounded-4xl animate-pulse">
 
-          <div className="absolute w-20 h-20 rounded-full border-4 border-transparent border-t-[#C2F800] animate-spin"></div>
+        {/* Hero Text */}
+        <div className="w-full lg:w-1/2 space-y-5">
+          <div className="h-5 w-36 bg-[#2D313B] rounded"></div>
 
-          <div className="absolute w-10 h-10 rounded-full bg-[#C2F800]/10 flex items-center justify-center">
-            <div className="w-3 h-3 rounded-full bg-[#C2F800] animate-pulse"></div>
+          <div className="space-y-3">
+            <div className="h-10 sm:h-12 w-full max-w-[500px] bg-[#2D313B] rounded"></div>
+            <div className="h-10 sm:h-12 w-4/5 bg-[#2D313B] rounded"></div>
           </div>
+
+          <div className="space-y-2 max-w-[450px]">
+            <div className="h-4 w-full bg-[#2D313B] rounded"></div>
+            <div className="h-4 w-11/12 bg-[#2D313B] rounded"></div>
+            <div className="h-4 w-3/4 bg-[#2D313B] rounded"></div>
+          </div>
+
+          <div className="h-12 w-44 bg-[#2D313B] rounded-lg"></div>
         </div>
 
-        {/* Text */}
-        <h2 className="text-white text-2xl font-bold mt-7">
-          Loading Exercises
-        </h2>
+        {/* Hero Image */}
+        <div className="w-[250px] h-[250px] sm:w-[320px] sm:h-[320px] lg:w-[400px] lg:h-[400px] bg-[#2D313B] rounded-3xl"></div>
+      </div>
 
-        <p className="text-[#9CA3AF] mt-2 text-sm">
-          Preparing your workout library...
-        </p>
 
-        {/* Loading Dots */}
-        <div className="flex gap-2 mt-5">
-          <span className="w-2 h-2 rounded-full bg-[#C2F800] animate-bounce"></span>
-          <span className="w-2 h-2 rounded-full bg-[#C2F800] animate-bounce [animation-delay:150ms]"></span>
-          <span className="w-2 h-2 rounded-full bg-[#C2F800] animate-bounce [animation-delay:300ms]"></span>
-        </div>
+      {/* Library Heading Skeleton */}
+      <div className="mt-10 sm:mt-14 lg:mt-[70px] space-y-3 animate-pulse">
+        <div className="h-10 w-52 bg-[#2D313B] rounded"></div>
+        <div className="h-5 w-80 max-w-full bg-[#2D313B] rounded"></div>
+      </div>
+
+
+      {/* Library Cards Skeleton */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-7 lg:gap-10 mt-10 sm:mt-12 lg:mt-[70px]">
+
+        {Array.from({ length: 6 }).map((_, index) => (
+          <div
+            key={index}
+            className="bg-[#15171D] rounded-3xl overflow-hidden animate-pulse"
+          >
+
+            {/* Image */}
+            <div className="w-full h-[220px] sm:h-[260px] lg:h-[300px] bg-[#2D313B]"></div>
+
+            <div className="p-4 sm:p-5 space-y-4">
+
+              {/* Tags */}
+              <div className="flex gap-2 sm:gap-3">
+                <div className="h-6 w-16 bg-[#2D313B] rounded-2xl"></div>
+                <div className="h-6 w-16 bg-[#2D313B] rounded-2xl"></div>
+                <div className="h-6 w-16 bg-[#2D313B] rounded-2xl"></div>
+              </div>
+
+              {/* Title */}
+              <div className="space-y-3">
+                <div className="h-7 w-4/5 bg-[#2D313B] rounded"></div>
+                <div className="h-5 w-2/3 bg-[#2D313B] rounded"></div>
+              </div>
+
+              <hr className="border-[#2D313B]" />
+
+              {/* Stats */}
+              <div className="flex gap-3">
+                <div className="h-5 w-20 bg-[#2D313B] rounded"></div>
+                <div className="h-5 w-20 bg-[#2D313B] rounded"></div>
+                <div className="h-5 w-12 bg-[#2D313B] rounded"></div>
+              </div>
+
+            </div>
+          </div>
+        ))}
 
       </div>
+
     </div>
   );
 };
 
 export default Loading;
-
