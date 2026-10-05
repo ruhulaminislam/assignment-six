@@ -111,7 +111,7 @@ http://localhost:3000
 ## 📸 Screenshot
 
 <p align="center">
-  <img src="./public/screenshot.png" width="100%" alt="FitLog Screenshot" />
+  <img src="./public/public/Screenshot_2026-10-06_03_08_07.png" width="100%" alt="FitLog Screenshot" />
 </p>
 
 ## 🔗 Project Links
